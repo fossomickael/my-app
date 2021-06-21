@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// State and reducers
+const reducers = combineReducers({
+  changeMe: (state = null, action) => state
+});
+
+// render an instance of the component in the DOM
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={createStore(reducers)}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
