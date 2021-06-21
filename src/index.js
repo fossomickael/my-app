@@ -5,10 +5,11 @@ import { createStore, combineReducers } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import movies_reducer from './reducers/movies_reducer';
 
 // State and reducers
 const reducers = combineReducers({
-  changeMe: (state = null, action) => state
+  movies: movies_reducer
 });
 
 // render an instance of the component in the DOM

@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
+import React from "react";
 import MovieList from './containers/movie_list';
 
-function App() {
+const App =() => {
   return (
     <div className="App">
       <div> <MovieList /></div>
