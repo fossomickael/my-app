@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Movie extends Component {
 
     render() {
-        return <div>The Godfather</div>
+        return <div className="card-category" >
+        Breakfast
+        </div>
     }
 
 }
